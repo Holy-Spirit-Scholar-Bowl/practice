@@ -1,0 +1,13 @@
+Set weights:
+Fine Arts 20%
+Mythology 15%
+Religion 15%
+Social Science 12.5%
+Philosophy 10%
+History 7.5%
+Literature 7.5%
+Science 7.5%
+Geography 2.5%
+Trash 2.5%
+
+25 sets of 20 questions, 500 questions total
