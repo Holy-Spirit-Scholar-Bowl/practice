@@ -1,6 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import { createStore } from 'vuex'
 
-createApp(App).use(store).use(router).mount('#app')
+export const practiceStore = createStore({})
+export const modulesStore = createStore({})
+
+createApp(App)
+  .use(router)
+  .use(practiceStore)
+  .mount('#app')
