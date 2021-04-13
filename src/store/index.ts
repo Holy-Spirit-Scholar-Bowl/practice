@@ -40,7 +40,7 @@ export class PracticeModule extends VuexModule {
   exclude = false
 
   get validQuestions (): { answer: string, questions: string[]}[] {
-    if (this.frequencyListFilter === '') {
+    if (this.frequencyListFilter === '' || !this.frequencyListFilter) {
       return []
     }
     return this.frequencyLists[this.frequencyListFilter]

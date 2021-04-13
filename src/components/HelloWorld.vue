@@ -64,6 +64,10 @@ export default class HelloWorld extends Vue {
   }
 
   next (): void {
+    if (!store.frequencyListFilter || !store.frequencyListFilter.length) {
+      return
+    }
+
     this.readingQuestion = true
     this.questionRead = []
     this.questionAndAnswer = store.validQuestions[Math.floor(store.validQuestions.length * Math.random())]
